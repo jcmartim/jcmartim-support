@@ -36,6 +36,20 @@
 		.border {
 			border-top: solid 1px #ececec;
 		}
+        .embed-wrap {
+            position: relative; 
+            padding-bottom: 56.25%; 
+            padding-top: 30px; 
+            height: 0; 
+            overflow: hidden;
+        }
+        .embed-video {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+        }
 	</style>
 	<h3 class="title"><?php esc_html_e('Support Contacts:', 'jcmartim-support'); ?></h3>
     <?php if($text) : ?>
@@ -84,23 +98,22 @@
         <?php endif; ?>    
 	</p>
     <?php if(count($embed) > 0) : ?>
-	<h3 class="title border"><?php echo esc_html('Tutorials', 'jcmartim-support'); ?></h3>
+    <h3 class="title border"><?php echo esc_html('Tutorials', 'jcmartim-support'); ?></h3>
     <?php 
         foreach($embed as $item) :
     ?>
-        <h4 class="legend"><?php echo esc_html__( $item['title'], 'jcmartim-support') ?></h4>
-        <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-            <iframe
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                src="https://www.youtube.com/embed/<?php echo $id; ?>"
-                title="Y<?php echo $item['title']; ?>" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-            ></iframe>
-        </div>
+	<h4 class="legend"><?php echo esc_html__( $item['title'], 'jcmartim-support') ?></h4>
+	<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+		<iframe
+            class="embed-video"
+			src="https://www.youtube.com/embed/<?php echo $id; ?>"
+			title="<?php echo $item['title']; ?>" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen
+		></iframe>
+	</div>
     <?php 
         endforeach; 
     ?>
-	</div>
     <?php endif; ?>
