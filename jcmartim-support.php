@@ -32,6 +32,8 @@ if ( ! class_exists( 'Jcmartim_Support' ) ) {
             register_deactivation_hook( JCMARTIM_SUPPORT_PATH, [$this, 'deactivation'] );
             //register_uninstall_hook( JCMARTIM_SENDMAILER_PATH, [$this, 'uninstall'] );
 
+            $this->load_textdomain();
+
             //Página e Menu do Front end.
             add_action('admin_menu', [$this, 'jcmartim_dashboard_admin_page']);
 
@@ -76,6 +78,14 @@ if ( ! class_exists( 'Jcmartim_Support' ) ) {
         public static function uninstall()
         {
             # code...
+        }
+
+        public function load_textdomain() {
+            load_plugin_textdomain(
+                $domain = 'jcmartim-support', 
+                $deprecated = false, 
+                $plugin_rel_path = dirname(plugin_basename(__FILE__)) . '/languages/'
+            );
         }
 
         public function jcmartim_dashboard_admin_page()

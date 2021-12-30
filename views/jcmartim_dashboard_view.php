@@ -1,23 +1,26 @@
 <?php
-    $text = "Olá! Meu nome é João Carlos e sou seu Web Developer. Coloco-me a sua disposição para qualquer tipo de suporte que se fizer necessário. Entre em contato de forma direta, através do telefone, Skype e WhatsApp ou pelo bom e velho e-mail.";
-    $office_hours_1 = "09:00";
-    $office_hours_2 = "12:00";
-    $office_hours_3 = "14:00";
-    $office_hours_4 = "18:00";
-    $week_start = "segunda";
-    $week_end = "sexta";
-    $email = "joao@jcmartim.site";
-    $phone_cell = "(51) 9 8617-4307";
-    $skype = "jcmartim_2";
-    $whatsapp = 51986174307;
+    $presentation   =   get_option( 'option_section_1');
+    $office_hours   =   get_option( 'option_section_2');
+    $contacts       =   get_option( 'option_section_3');
+    $tutorials      =   get_option( 'option_section_4');
+
+    $text = $presentation['jcmartim_support_presentation'];
+    $office_hours_1 = $office_hours['jcmartim_support_office_hours_first_hour_morning'];
+    $office_hours_2 = $office_hours['jcmartim_support_office_hours_last_hour_morning'];
+    $office_hours_3 = $office_hours['jcmartim_support_office_hours_first_hour_afternoon'];
+    $office_hours_4 = $office_hours['jcmartim_support_office_hours_last_hour_afternoon'];
+    $week_start = $office_hours['jcmartim_support_office_hours_first_day_week'];
+    $week_end = $office_hours['jcmartim_support_office_hours_last_day_week'];
+    $email = $contacts['jcmartim_support_office_hours_contact_email'];
+    $phone_cell = $contacts['jcmartim_support_office_hours_contact_fhone_cell'];
+    $skype = $contacts['jcmartim_support_office_hours_contact_sckype'];
+    $whatsapp = $contacts['jcmartim_support_office_hours_contact_whatsapp'];
     $web_site_url = "https://jcmartim.site";
     $web_site_url ? $web_site_domain = explode('//', $web_site_url)[1] : null;
-    $embed = [
-        [ 'link' => 'https://youtu.be/jskowllPATg', 'title' => 'Prévia do Front-End' ],
-        [ 'link' => 'https://youtu.be/eo2gDhE8IXA', 'title' => 'Prévia do Back-End' ]
-    ];
+    $embed = $tutorials['jcmartim_support_tutorials'];
+
     for($i = 0; $i < count($embed); $i++) {
-        $e = explode('//', $embed[$i]['link']);
+        $e = explode('//', $embed[$i]['url']);
         $id = explode('/', $e[1])[1];
     }
 ?>

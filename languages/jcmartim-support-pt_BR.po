@@ -1,0 +1,239 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blank WordPress Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2021-12-30 19:21-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class/class.jcmartim_dashboard_settings.php:53
+#: class/class.jcmartim_dashboard_settings.php:85
+#: views/jcmartim_dashboard_admin_view.php:14
+msgid "Presentation"
+msgstr "Apresentação"
+
+#: class/class.jcmartim_dashboard_settings.php:60
+#: views/jcmartim_dashboard_admin_view.php:20
+msgid "Office Hours"
+msgstr "Expediente"
+
+#: class/class.jcmartim_dashboard_settings.php:67
+#: views/jcmartim_dashboard_admin_view.php:26
+msgid "Contacts"
+msgstr "Contatos"
+
+#: class/class.jcmartim_dashboard_settings.php:74
+#: views/jcmartim_dashboard_admin_view.php:32
+msgid "Tutorials"
+msgstr "Tutoriais"
+
+#: class/class.jcmartim_dashboard_settings.php:96
+msgid "First hour (morning)."
+msgstr "Primeira hora (manhã)."
+
+#: class/class.jcmartim_dashboard_settings.php:106
+msgid "Last hour (morning)."
+msgstr "Última hora (manhã)."
+
+#: class/class.jcmartim_dashboard_settings.php:116
+msgid "First hour (afternoon)"
+msgstr "Primeira hora (tarde)"
+
+#: class/class.jcmartim_dashboard_settings.php:126
+msgid "Last hour (afternoon)"
+msgstr "Última hora (tarde)"
+
+#: class/class.jcmartim_dashboard_settings.php:136
+msgid "First day week"
+msgstr "Primeiro dia da semana"
+
+#: class/class.jcmartim_dashboard_settings.php:155
+msgid "Last day week"
+msgstr "Último dia da semana"
+
+#: class/class.jcmartim_dashboard_settings.php:174
+#: views/jcmartim_dashboard_view.php:72
+msgid "Email"
+msgstr "E-mail"
+
+#: class/class.jcmartim_dashboard_settings.php:184
+msgid "Phone or Cell"
+msgstr "Telefone ou Celular"
+
+#: class/class.jcmartim_dashboard_settings.php:194
+#: views/jcmartim_dashboard_view.php:81
+msgid "Skype"
+msgstr "Skype"
+
+#: class/class.jcmartim_dashboard_settings.php:204
+#: views/jcmartim_dashboard_view.php:86
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: class/class.jcmartim_dashboard_settings.php:214
+#: views/jcmartim_dashboard_view.php:91
+msgid "Web Site"
+msgstr "Site"
+
+#: class/class.jcmartim_dashboard_settings.php:224
+msgid "Videos"
+msgstr "Vídeos"
+
+#: class/class.jcmartim_dashboard_settings.php:234
+msgid "Amount of field groups"
+msgstr "Quantidade de grupos de campo"
+
+#: class/class.jcmartim_dashboard_settings.php:252
+msgid ""
+"In this section, enter a brief text about you (Web Developer), your company "
+"or agency."
+msgstr ""
+"Nesta seção, insira um breve texto sobre você (Desenvolvedor Web), sua "
+"empresa ou agência."
+
+#: class/class.jcmartim_dashboard_settings.php:261
+msgid ""
+"Enter here with details of the times and days of the week when support "
+"services will be provided to your customers. E.g.: From 9:00 am to 12:00 pm "
+"and from 2:00 pm to 6:00 pm from Monday to Friday."
+msgstr ""
+"Entre aqui com detalhes dos horários e dias da semana em que os serviços de "
+"suporte serão fornecidos aos seus clientes. Ex .: das 9:00 às 12:00 e das "
+"14:00 às 18:00 de segunda a sexta-feira."
+
+#: class/class.jcmartim_dashboard_settings.php:270
+msgid "Enter your support contacts here."
+msgstr "Insira seus contatos de suporte aqui."
+
+#: class/class.jcmartim_dashboard_settings.php:279
+msgid ""
+"In this section, enter the tutorial data. Youtube link URL and a title for "
+"the tutorial. ATTENTION: to add more groups click on \"Amount of field groups"
+"\" and increase the number, then click on update."
+msgstr ""
+"Nesta seção, insira os dados do tutorial. URL do link do Youtube e um título "
+"para o tutorial. ATENÇÃO: para adicionar mais grupos clique em “Quantidade "
+"de grupos de campo” e aumente o número, a seguir clique em atualizar."
+
+#: class/class.jcmartim_dashboard_settings.php:300
+msgid "Enter introductory text for your customers."
+msgstr "Insira um texto introdutório para seus clientes."
+
+#: class/class.jcmartim_dashboard_settings.php:400
+msgid "Email to support."
+msgstr "Email para suporte."
+
+#: class/class.jcmartim_dashboard_settings.php:413
+msgid "Phone or Mobile for support."
+msgstr "Telefone ou celular para suporte."
+
+#: class/class.jcmartim_dashboard_settings.php:426
+msgid "Skype Name. E.g.: live:myskypename"
+msgstr "Nome no Skype. Ex.: live:myskypename"
+
+#: class/class.jcmartim_dashboard_settings.php:439
+msgid "WhatsApp number. Ex: 75979111144"
+msgstr "Número do WhatsApp. Ex.: 75979111144"
+
+#: class/class.jcmartim_dashboard_settings.php:452
+msgid "Web site. E.g.: https://www.mywebsite.com"
+msgstr "Site. Ex.: https://www.mywebsite.com"
+
+#: class/class.jcmartim_dashboard_settings.php:469
+msgid ""
+"Paste the url of the Youtube video here. E.g.: https://youtu.be/eo2gDhE6XGT"
+msgstr ""
+"Cole a url do vídeo do Youtube aqui. Ex .: https://youtu.be/eo2gDhE6XGT"
+
+#: class/class.jcmartim_dashboard_settings.php:477
+msgid "Short title for this tutorial."
+msgstr "Título curto para este tutorial."
+
+#: class/class.jcmartim_dashboard_settings.php:498
+msgid "To update"
+msgstr "Atualizar"
+
+#: class/class.jcmartim_dashboard_settings.php:504
+msgid "Number of tutorial fields. To insert a new block of video fields."
+msgstr ""
+"Número de campos do tutorial. Para inserir um novo bloco de campos de vídeo."
+
+#: jcmartim-support.php:106
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Você não tem permissões suficientes para acessar esta página."
+
+#: jcmartim-support.php:115
+msgid "Support Information"
+msgstr "Informação de Suporte"
+
+#: views/jcmartim_dashboard_admin_view.php:45
+#: views/jcmartim_dashboard_admin_view.php:58
+#: views/jcmartim_dashboard_admin_view.php:71
+#: views/jcmartim_dashboard_admin_view.php:84
+msgid "Settings saved successfully!"
+msgstr "Configurações salvas com sucesso!"
+
+#: views/jcmartim_dashboard_admin_view.php:90
+msgid "To save"
+msgstr "Salvar"
+
+#: views/jcmartim_dashboard_view.php:50
+msgid "Support Contacts:"
+msgstr "Contatos de suporte:"
+
+#: views/jcmartim_dashboard_view.php:55
+msgid "Please! Enter the data in the administration panel of this plugin."
+msgstr "Por favor! Insira os dados no painel de administração deste plugin."
+
+#: views/jcmartim_dashboard_view.php:60
+msgid "office hours"
+msgstr "Horários de expediente"
+
+#: views/jcmartim_dashboard_view.php:61
+msgid "of the"
+msgstr "das"
+
+#: views/jcmartim_dashboard_view.php:62 views/jcmartim_dashboard_view.php:64
+msgid "at"
+msgstr "às"
+
+#: views/jcmartim_dashboard_view.php:63
+msgid "and of the"
+msgstr "e das"
+
+#: views/jcmartim_dashboard_view.php:65
+msgid "in"
+msgstr "de"
+
+#: views/jcmartim_dashboard_view.php:66
+msgid "the"
+msgstr "a"
+
+#: views/jcmartim_dashboard_view.php:77
+msgid "Phone/Cell"
+msgstr "Telefone/Celular"
+
+#: views/jcmartim_dashboard_view.php:83
+msgid "Call on Skype"
+msgstr "Ligue no Skype"
+
+#: views/jcmartim_dashboard_view.php:88
+msgid "Message by WhatsApp"
+msgstr "Mensagem por WhatsApp"
