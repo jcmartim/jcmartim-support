@@ -93,7 +93,7 @@ if ( ! class_exists( 'Jcmartim_Support' ) ) {
             add_menu_page(
                 $page_title = esc_html('Support Information', 'jcmartim-support'),
                 $menu_title = esc_html('Support Information', 'jcmartim-support'),
-                $capability = 'edit_pages',
+                $capability = 'manage_options',
                 $menu_slug = 'jcmartim_support',
                 $function = [$this, 'jcmartim_support_page'],
                 $icon_url = 'dashicons-info',
