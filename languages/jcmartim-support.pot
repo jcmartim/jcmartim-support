@@ -12,7 +12,7 @@ msgstr ""
 "<translations@example."
 "com>\n"
 "POT-Creation-Date: "
-"2021-12-30 23:40-0300\n"
+"2021-12-31 00:43-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:74
 #: views/jcmartim_dashboard_admin_view.php:32
-#: views/jcmartim_dashboard_view.php:97
+#: views/jcmartim_dashboard_view.php:102
 msgid "Tutorials"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgid "Last day week"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:174
-#: views/jcmartim_dashboard_view.php:72
+#: views/jcmartim_dashboard_view.php:77
 msgid "Email"
 msgstr ""
 
@@ -181,22 +181,22 @@ msgid "Phone or Cell"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:194
-#: views/jcmartim_dashboard_view.php:81
+#: views/jcmartim_dashboard_view.php:86
 msgid "Skype"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:204
-#: views/jcmartim_dashboard_view.php:86
+#: views/jcmartim_dashboard_view.php:91
 msgid "WhatsApp"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:214
-#: views/jcmartim_dashboard_view.php:91
+#: views/jcmartim_dashboard_view.php:96
 msgid "Web Site"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:224
-msgid "Videos"
+msgid "Video field groups"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:234
@@ -298,9 +298,9 @@ msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:504
 msgid ""
-"Number of tutorial "
-"fields. To insert a new "
-"block of video fields."
+"To insert a new block of "
+"video fields enter the "
+"amount and click update."
 msgstr ""
 
 #: jcmartim-support.php:106
@@ -343,34 +343,34 @@ msgid "office hours"
 msgstr ""
 
 #: views/jcmartim_dashboard_view.php:61
-msgid "of the"
-msgstr ""
-
-#: views/jcmartim_dashboard_view.php:62
-#: views/jcmartim_dashboard_view.php:64
-msgid "at"
+msgid "from"
 msgstr ""
 
 #: views/jcmartim_dashboard_view.php:63
-msgid "and of the"
+#: views/jcmartim_dashboard_view.php:67
+msgid "to"
 msgstr ""
 
 #: views/jcmartim_dashboard_view.php:65
+msgid "and from"
+msgstr ""
+
+#: views/jcmartim_dashboard_view.php:69
 msgid "in"
 msgstr ""
 
-#: views/jcmartim_dashboard_view.php:66
+#: views/jcmartim_dashboard_view.php:71
 msgid "the"
 msgstr ""
 
-#: views/jcmartim_dashboard_view.php:77
+#: views/jcmartim_dashboard_view.php:82
 msgid "Phone/Cell"
 msgstr ""
 
-#: views/jcmartim_dashboard_view.php:83
+#: views/jcmartim_dashboard_view.php:88
 msgid "Call on Skype"
 msgstr ""
 
-#: views/jcmartim_dashboard_view.php:88
+#: views/jcmartim_dashboard_view.php:93
 msgid "Message by WhatsApp"
 msgstr ""

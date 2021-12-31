@@ -58,13 +58,18 @@
     <?php if($office_hours_1 && $office_hours_2 && $office_hours_3 && $office_hours_4 && $week_start && $week_end) : ?>
     <p>
         <strong><?php esc_html_e('office hours', 'jcmartim-support'); ?></strong>
-        <?php esc_html_e('of the', 'jcmartim-support') ?> 
-        <?php echo $office_hours_1; ?> <?php esc_html_e('at', 'jcmartim-support') ?> 
-        <?php echo $office_hours_2; ?> <?php esc_html_e('and of the', 'jcmartim-support') ?> 
-        <?php echo $office_hours_3; ?> <?php esc_html_e('at', 'jcmartim-support') ?> 
-        <?php echo $office_hours_4; ?> <?php esc_html_e('in', 'jcmartim-support') ?>  
-        <?php echo esc_attr__( $week_start, 'jcmartim-support'); ?> <?php esc_html_e('the', 'jcmartim-support') ?> 
-        <?php esc_html_e( $week_end, 'jcmartim-support' ) ; ?>.
+        <?php esc_html_e('from', 'jcmartim-support') ?> 
+        <?php esc_html_e($office_hours_1, 'jcmartim-support'); ?> 
+        <?php esc_html_e('to', 'jcmartim-support') ?> 
+        <?php esc_html_e($office_hours_2 , 'jcmartim-support'); ?> 
+        <?php esc_html_e('and from', 'jcmartim-support') ?> 
+        <?php esc_html_e($office_hours_3, 'jcmartim-support'); ?>  
+        <?php esc_html_e('to', 'jcmartim-support') ?> 
+        <?php esc_html_e($office_hours_4, 'jcmartim-support'); ?>  
+        <?php esc_html_e('in', 'jcmartim-support') ?>  
+        <?php esc_html_e($week_start, 'jcmartim-support'); ?> 
+        <?php esc_html_e('the', 'jcmartim-support') ?> 
+        <?php esc_html_e($week_end, 'jcmartim-support' ) ; ?>.
     </p>
     <?php endif; ?>
 	<p>

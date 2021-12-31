@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blank WordPress Pot v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2021-12-30 23:40-0300\n"
+"POT-Creation-Date: 2021-12-31 00:43-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -41,7 +41,7 @@ msgstr "Contatos"
 
 #: class/class.jcmartim_dashboard_settings.php:74
 #: views/jcmartim_dashboard_admin_view.php:32
-#: views/jcmartim_dashboard_view.php:97
+#: views/jcmartim_dashboard_view.php:102
 msgid "Tutorials"
 msgstr "Tutoriais"
 
@@ -140,7 +140,7 @@ msgid "Last day week"
 msgstr "Último dia da semana"
 
 #: class/class.jcmartim_dashboard_settings.php:174
-#: views/jcmartim_dashboard_view.php:72
+#: views/jcmartim_dashboard_view.php:77
 msgid "Email"
 msgstr "E-mail"
 
@@ -149,23 +149,23 @@ msgid "Phone or Cell"
 msgstr "Telefone ou Celular"
 
 #: class/class.jcmartim_dashboard_settings.php:194
-#: views/jcmartim_dashboard_view.php:81
+#: views/jcmartim_dashboard_view.php:86
 msgid "Skype"
 msgstr "Skype"
 
 #: class/class.jcmartim_dashboard_settings.php:204
-#: views/jcmartim_dashboard_view.php:86
+#: views/jcmartim_dashboard_view.php:91
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
 #: class/class.jcmartim_dashboard_settings.php:214
-#: views/jcmartim_dashboard_view.php:91
+#: views/jcmartim_dashboard_view.php:96
 msgid "Web Site"
 msgstr "Site"
 
 #: class/class.jcmartim_dashboard_settings.php:224
-msgid "Videos"
-msgstr "Vídeos"
+msgid "Video field groups"
+msgstr "Grupos de campos de vídeos"
 
 #: class/class.jcmartim_dashboard_settings.php:234
 msgid "Amount of field groups"
@@ -242,9 +242,11 @@ msgid "To update"
 msgstr "Atualizar"
 
 #: class/class.jcmartim_dashboard_settings.php:504
-msgid "Number of tutorial fields. To insert a new block of video fields."
+msgid ""
+"To insert a new block of video fields enter the amount and click update."
 msgstr ""
-"Número de campos do tutorial. Para inserir um novo bloco de campos de vídeo."
+"Para inserir um novo bloco de campos de vídeo digite a quantidade e clique "
+"em atualizar."
 
 #: jcmartim-support.php:106
 msgid "You do not have sufficient permissions to access this page."
@@ -278,33 +280,56 @@ msgid "office hours"
 msgstr "Horários de expediente"
 
 #: views/jcmartim_dashboard_view.php:61
-msgid "of the"
+msgid "from"
 msgstr "das"
 
-#: views/jcmartim_dashboard_view.php:62 views/jcmartim_dashboard_view.php:64
-msgid "at"
+#: views/jcmartim_dashboard_view.php:63 views/jcmartim_dashboard_view.php:67
+msgid "to"
 msgstr "às"
 
-#: views/jcmartim_dashboard_view.php:63
-msgid "and of the"
+#: views/jcmartim_dashboard_view.php:65
+msgid "and from"
 msgstr "e das"
 
-#: views/jcmartim_dashboard_view.php:65
+#: views/jcmartim_dashboard_view.php:69
 msgid "in"
 msgstr "de"
 
-#: views/jcmartim_dashboard_view.php:66
+#: views/jcmartim_dashboard_view.php:71
 msgid "the"
 msgstr "a"
 
-#: views/jcmartim_dashboard_view.php:77
+#: views/jcmartim_dashboard_view.php:82
 msgid "Phone/Cell"
 msgstr "Telefone/Celular"
 
-#: views/jcmartim_dashboard_view.php:83
+#: views/jcmartim_dashboard_view.php:88
 msgid "Call on Skype"
 msgstr "Ligue no Skype"
 
-#: views/jcmartim_dashboard_view.php:88
+#: views/jcmartim_dashboard_view.php:93
 msgid "Message by WhatsApp"
 msgstr "Mensagem por WhatsApp"
+
+#~ msgid "Number of tutorial fields. To insert a new block of video fields."
+#~ msgstr ""
+#~ "Número de campos do tutorial. Para inserir um novo bloco de campos de "
+#~ "vídeo."
+
+#~ msgid "Videos"
+#~ msgstr "Vídeos"
+
+#~ msgid "am"
+#~ msgstr "da manhã"
+
+#~ msgid "pm"
+#~ msgstr "da tarde "
+
+#~ msgid "of the"
+#~ msgstr "das"
+
+#~ msgid "at"
+#~ msgstr "às"
+
+#~ msgid "and of the"
+#~ msgstr "e das"

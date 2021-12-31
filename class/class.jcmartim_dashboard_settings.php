@@ -221,7 +221,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
              );
              add_settings_field( 
                 $id = 'jcmartim_support_tutorials',
-                $title = esc_html__( 'Videos', 'jcmartim-support' ),
+                $title = esc_html__( 'Video field groups', 'jcmartim-support' ),
                 $callback = [$this, 'jcmartim_support_tutorials_callbak'],
                 $page = 'jcmartim_support_admin_page_tutorials',
                 $section = 'jcmartim_support_admin_section_tutorials',
@@ -501,7 +501,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                         $wrap = false,
                     ); 
                 ?>
-            <p><?php esc_html_e("Number of tutorial fields. To insert a new block of video fields.", "jcmartim-support") ?></p>
+            <p><?php esc_html_e("To insert a new block of video fields enter the amount and click update.", "jcmartim-support") ?></p>
             <?php
         }
         
