@@ -63,38 +63,38 @@
         <?php echo $office_hours_2; ?> <?php esc_html_e('and of the', 'jcmartim-support') ?> 
         <?php echo $office_hours_3; ?> <?php esc_html_e('at', 'jcmartim-support') ?> 
         <?php echo $office_hours_4; ?> <?php esc_html_e('in', 'jcmartim-support') ?>  
-        <?php echo $week_start; ?> <?php esc_html_e('the', 'jcmartim-support') ?> 
-        <?php echo $week_end; ?>.
+        <?php echo esc_attr__( $week_start, 'jcmartim-support'); ?> <?php esc_html_e('the', 'jcmartim-support') ?> 
+        <?php esc_html_e( $week_end, 'jcmartim-support' ) ; ?>.
     </p>
     <?php endif; ?>
 	<p>
         <?php if($email) : ?>
-            <strong><?php echo esc_html__('Email', 'jcmartim-support') ?></strong>: 
+            <strong><?php esc_html_e('Email', 'jcmartim-support') ?></strong>: 
                 <a href="mailto: <?php esc_html_e($email);  ?>" target="_black">
-                <?php echo esc_html($email) ?></a><br />
+                <?php esc_html_e($email) ?></a><br />
         <?php endif; ?>
         <?php if($phone_cell) : ?>
-		    <strong><?php echo esc_html__('Phone/Cell', 'jcmartim-support') ?></strong>: 
+		    <strong><?php esc_html_e('Phone/Cell', 'jcmartim-support') ?></strong>: 
                 <?php echo $phone_cell ?><br />
         <?php endif; ?>
         <?php if($skype) : ?>
-            <strong><?php echo esc_html__('Skype', 'jcmartim-support') ?></strong>: 
+            <strong><?php esc_html_e('Skype', 'jcmartim-support') ?></strong>: 
                 <a href="skype:<?php echo esc_html($skype) ?> ?call" target="_black">
                 <?php echo esc_html__('Call on Skype', 'jcmartim-support') ?></a><br />
         <?php endif; ?>
         <?php if($whatsapp) : ?>
             <strong><?php echo esc_html__('WhatsApp', 'jcmartim-support') ?></strong>: 
                 <a href="https://api.whatsapp.com/send?phone=<?php echo esc_html($whatsapp); ?>" target="_black">
-                <?php echo esc_html__('Message by WhatsApp', 'jcmartim-support') ?></a><br />
+                <?php esc_html_e('Message by WhatsApp', 'jcmartim-support') ?></a><br />
         <?php endif; ?>
         <?php if($web_site_url) : ?>
-            <strong><?php echo esc_html__('Web Site', 'jcmartim-support') ?></strong>: 
-                <a href="<?php echo esc_html($web_site_url); ?>" target="_black">
-                <?php echo esc_html($web_site_domain); ?></a>
+            <strong><?php esc_html_e('Web Site', 'jcmartim-support') ?></strong>: 
+                <a href="<?php esc_html_e($web_site_url); ?>" target="_black">
+                <?php esc_html_e($web_site_domain); ?></a>
         <?php endif; ?>    
 	</p>
     <?php if(count($embed) > 0) : ?>
-    <h3 class="title border"><?php echo esc_html('Tutorials', 'jcmartim-support'); ?></h3>
+    <h3 class="title border"><?php esc_html_e('Tutorials', 'jcmartim-support'); ?></h3>
     <?php 
         foreach($embed as $item) :
     ?>

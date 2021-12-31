@@ -9,7 +9,7 @@
  * Author URI:        https://jcmartim.site
  * Requires at least: 4.7
  * Tested up to:      5.8.2
- * Requires PHP:      7.4
+ * Requires PHP:      7.3
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       jcmartim-support

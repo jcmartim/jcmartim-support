@@ -140,13 +140,13 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                 $args = [
                     'label_for' => 'jcmartim_support_office_hours_first_day_week',
                     'options' => [
-                        'Monday' => 'Monday',
-                        'Tuesday' => 'Tuesday',
-                        'Wednesday' => 'Wednesday',
-                        'Thursday' => 'Thursday',
-                        'Friday' => 'Friday',
-                        'Saturday' => 'Saturday',
-                        'Sunday' => 'Sunday',
+                        esc_attr__('monday', 'jcmartim-support') => esc_html__('Monday', 'jcmartim-support'),
+                        esc_attr__('tuesday', 'jcmartim-support') => esc_html__('Tuesday', 'jcmartim-support'),
+                        esc_attr__('wednesday', 'jcmartim-support') => esc_html__('Wednesday', 'jcmartim-support'),
+                        esc_attr__('thursday', 'jcmartim-support') => esc_html__('Thursday', 'jcmartim-support'),
+                        esc_attr__('friday', 'jcmartim-support') => esc_html__('Friday', 'jcmartim-support'),
+                        esc_attr__('saturday', 'jcmartim-support') => esc_html__('Saturday', 'jcmartim-support'),
+                        esc_attr__('sunday', 'jcmartim-support') => esc_html__('Sunday', 'jcmartim-support'),
                     ],
                 ]
              );
@@ -159,13 +159,13 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                 $args = [
                     'label_for' => 'jcmartim_support_office_hours_last_day_week',
                     'options' => [
-                        'Monday' => 'Monday',
-                        'Tuesday' => 'Tuesday',
-                        'Wednesday' => 'Wednesday',
-                        'Thursday' => 'Thursday',
-                        'Friday' => 'Friday',
-                        'Saturday' => 'Saturday',
-                        'Sunday' => 'Sunday',
+                        esc_attr__('monday', 'jcmartim-support') => esc_html__('Monday', 'jcmartim-support'),
+                        esc_attr__('tuesday', 'jcmartim-support') => esc_html__('Tuesday', 'jcmartim-support'),
+                        esc_attr__('wednesday', 'jcmartim-support') => esc_html__('Wednesday', 'jcmartim-support'),
+                        esc_attr__('thursday', 'jcmartim-support') => esc_html__('Thursday', 'jcmartim-support'),
+                        esc_attr__('friday', 'jcmartim-support') => esc_html__('Friday', 'jcmartim-support'),
+                        esc_attr__('saturday', 'jcmartim-support') => esc_html__('Saturday', 'jcmartim-support'),
+                        esc_attr__('sunday', 'jcmartim-support') => esc_html__('Sunday', 'jcmartim-support'),
                     ],
                 ]
              );
@@ -293,7 +293,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                 id="jcmartim_support_presentation" 
                 cols="60" 
                 rows="5"
-                <?php echo  empty(self::$optons_section_1['jcmartim_support_presentation']) ? 
+                <?php echo empty(self::$optons_section_1['jcmartim_support_presentation']) ? 
                     'style="border-color:red"' : 'style="border-color:green"'; ?>
             ><?php echo isset(self::$optons_section_1['jcmartim_support_presentation']) ? 
                 esc_html__(self::$optons_section_1['jcmartim_support_presentation'], 'jcmartim-support') : '' ?></textarea>
@@ -358,11 +358,11 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
             >
                 <?php foreach($args['options'] as $key => $value) : ?>
                     <option 
-                        value="<?php echo $key ?>"
+                        value="<?php echo esc_attr__($key) ?>"
                         <?php isset(self::$optons_section_2['jcmartim_support_office_hours_first_day_week']) ? 
                         selected($key, self::$optons_section_2['jcmartim_support_office_hours_first_day_week'], true) : '' ?>
                     >
-                        <?php esc_html_e($value) ?>
+                    <?php esc_html_e($value, 'jcmartim-support') ?>
                     </option>
                 <?php endforeach; ?>
             </select>
@@ -377,11 +377,11 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
             >
                 <?php foreach($args['options'] as $key => $value) : ?>
                     <option 
-                        value="<?php echo $key ?>"
+                        value="<?php echo esc_attr__($key) ?>"
                         <?php isset(self::$optons_section_2['jcmartim_support_office_hours_last_day_week']) ? 
                         selected($key, self::$optons_section_2['jcmartim_support_office_hours_last_day_week'], true) : '' ?>
                     >
-                        <?php esc_html_e($value) ?>
+                    <?php esc_html_e($value, 'jcmartim-support') ?>
                     </option>
                 <?php endforeach; ?>
             </select>

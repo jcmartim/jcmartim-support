@@ -12,7 +12,7 @@ msgstr ""
 "<translations@example."
 "com>\n"
 "POT-Creation-Date: "
-"2021-12-30 19:41-0300\n"
+"2021-12-30 23:40-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -69,6 +69,7 @@ msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:74
 #: views/jcmartim_dashboard_admin_view.php:32
+#: views/jcmartim_dashboard_view.php:97
 msgid "Tutorials"
 msgstr ""
 
@@ -94,6 +95,76 @@ msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:136
 msgid "First day week"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:143
+#: class/class.jcmartim_dashboard_settings.php:162
+msgid "monday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:143
+#: class/class.jcmartim_dashboard_settings.php:162
+msgid "Monday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:144
+#: class/class.jcmartim_dashboard_settings.php:163
+msgid "tuesday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:144
+#: class/class.jcmartim_dashboard_settings.php:163
+msgid "Tuesday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:145
+#: class/class.jcmartim_dashboard_settings.php:164
+msgid "wednesday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:145
+#: class/class.jcmartim_dashboard_settings.php:164
+msgid "Wednesday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:146
+#: class/class.jcmartim_dashboard_settings.php:165
+msgid "thursday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:146
+#: class/class.jcmartim_dashboard_settings.php:165
+msgid "Thursday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:147
+#: class/class.jcmartim_dashboard_settings.php:166
+msgid "friday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:147
+#: class/class.jcmartim_dashboard_settings.php:166
+msgid "Friday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:148
+#: class/class.jcmartim_dashboard_settings.php:167
+msgid "saturday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:148
+#: class/class.jcmartim_dashboard_settings.php:167
+msgid "Saturday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:149
+#: class/class.jcmartim_dashboard_settings.php:168
+msgid "sunday"
+msgstr ""
+
+#: class/class.jcmartim_dashboard_settings.php:149
+#: class/class.jcmartim_dashboard_settings.php:168
+msgid "Sunday"
 msgstr ""
 
 #: class/class.jcmartim_dashboard_settings.php:155
