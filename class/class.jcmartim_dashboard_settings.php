@@ -293,8 +293,6 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                 id="jcmartim_support_presentation" 
                 cols="60" 
                 rows="5"
-                <?php echo empty(self::$optons_section_1['jcmartim_support_presentation']) ? 
-                    'style="border-color:red"' : 'style="border-color:green"'; ?>
             ><?php echo isset(self::$optons_section_1['jcmartim_support_presentation']) ? 
                 esc_html__(self::$optons_section_1['jcmartim_support_presentation'], 'jcmartim-support') : '' ?></textarea>
                 <p><?php esc_html_e("Enter introductory text for your customers.", "jcmartim-support") ?></p>

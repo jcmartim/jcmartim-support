@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       Jcmartim Support
  * Plugin URI:        https://jcmartim.site/plugins/jcmartim-support
- * Description:       Displays a Meta Box of information for accessing support.
+ * Description:       TRANSLATORS: Displays a widget on the admin panel to support customers and video tutorials to teach them how to administer the site.
  * Version:           1.0.0
  * Author:            João Carlos Martimbianco
  * Author URI:        https://jcmartim.site
