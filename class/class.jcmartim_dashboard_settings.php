@@ -41,7 +41,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
             register_setting( // Tutoriais
                 $option_group = 'option_section_group_4', 
                 $option_name = 'option_section_4', 
-                $args = [$this, 'jcmartim_support_option_section_4_sanitize']
+                $args = null
             );
 
             /**
@@ -169,6 +169,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                     ],
                 ]
              );
+             //Contatos
              add_settings_field( 
                 $id = 'jcmartim_support_office_hours_contact_email',
                 $title = esc_html__( 'Email', 'jcmartim-support' ),
@@ -219,6 +220,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                     'label_for' => 'jcmartim_support_office_hours_contact_site',
                 ]
              );
+             //Tutoriais
              add_settings_field( 
                 $id = 'jcmartim_support_tutorials',
                 $title = esc_html__( 'Video field groups', 'jcmartim-support' ),
@@ -385,6 +387,7 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
             </select>
             <?php
         }
+        //Contatos.
         public function jcmartim_support_office_hours_contact_email_callbak()
         {
             ?>
@@ -445,14 +448,15 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                 name="option_section_3[jcmartim_support_office_hours_contact_site]" 
                 id="jcmartim_support_office_hours_contact_site"
                 value="<?php echo isset(self::$optons_section_3['jcmartim_support_office_hours_contact_site']) ? 
-                esc_url_raw(self::$optons_section_3['jcmartim_support_office_hours_contact_site']) : '' ?>"
+                esc_url(self::$optons_section_3['jcmartim_support_office_hours_contact_site']) : '' ?>"
             />
             <p><?php esc_html_e("Web site. E.g.: https://www.mywebsite.com", "jcmartim-support") ?></p>
             <?php
         }
+        //Tutoriais.
         public function jcmartim_support_tutorials_callbak()
         {
-            //Atribui a variával a quantidade de campos salvo no banco de dados. Caso não tenha nenhum, adicona um.
+            //Atribui a variával a quantidade de campos salvo no banco de dados. Caso não tenha nenhum, adiciona um.
             $amount = isset(self::$optons_section_4['jcmartim_support_tutorials_amount']) ? self::$optons_section_4['jcmartim_support_tutorials_amount'] : '1';
             for($i = 0; $i < $amount; $i++) :
             ?>
@@ -501,6 +505,88 @@ if ( ! class_exists('JCMartim_Daschboard_Settings') ) {
                 ?>
             <p><?php esc_html_e("To insert a new block of video fields enter the amount and click update.", "jcmartim-support") ?></p>
             <?php
+        }
+
+        /**
+         * Sanatizando antes de enviar para o banco de dados.
+         */
+        //Apresentação.
+        public function jcmartim_support_option_section_1_sanitize($fields)
+        {
+            $field_sanitize = [];
+
+            foreach ($fields as $key => $value) {
+                switch ($key) {
+                    case 'jcmartim_support_presentation':
+                        $field_sanitize[$key] = sanitize_textarea_field($value);
+                        break;
+                    default :
+                        $field_sanitize[$key] = sanitize_textarea_field($value);
+                        break;
+                }
+            }
+            return $field_sanitize;
+        }
+        //Expediente.
+        public function jcmartim_support_option_section_2_sanitize($fields)
+        {
+            $field_sanitize = [];
+
+            foreach ($fields as $key => $value) {
+                switch ($key) {
+                    case 'jcmartim_support_office_hours_first_hour_morning':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_last_hour_morning':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_first_hour_afternoon':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_last_hour_afternoon':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_first_day_week':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_last_day_week':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    default :
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                }
+            }
+            return $field_sanitize;
+        }
+        //Contatos.
+        public function jcmartim_support_option_section_3_sanitize($fields)
+        {
+            $field_sanitize = [];
+
+            foreach ($fields as $key => $value) {
+                switch ($key) {
+                    case 'jcmartim_support_office_hours_contact_email':
+                        $field_sanitize[$key] = sanitize_email($value);
+                        break;
+                    case 'jcmartim_support_office_hours_contact_fhone_cell':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_contact_sckype':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_contact_whatsapp':
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                    case 'jcmartim_support_office_hours_contact_site':
+                        $field_sanitize[$key] = esc_url($value);
+                        break;
+                    default :
+                        $field_sanitize[$key] = sanitize_text_field($value);
+                        break;
+                }
+            }
+            return $field_sanitize;
         }
         
     }
